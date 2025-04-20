@@ -54,5 +54,8 @@ public class Pan
                 ", bankDetails='" + bankDetails + '\'' +
                 ", investments='" + investments + '\'' +
                 '}';
+
+
     }
+
 }

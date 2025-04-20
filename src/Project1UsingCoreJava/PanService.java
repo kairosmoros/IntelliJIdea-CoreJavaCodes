@@ -18,6 +18,7 @@ public class PanService {
         for (Pan pan : panMap.values())//in map we have map<key - value> now when we write only panMap.values() then iterator will print all the values and leave the key
         //and values are object of type Pan
         {
+             System.out.println(pan);//this will print the values of the in map hash table
             if (pan.getAadhaarNumber().equals(aadhaarNumber))
             {
                 return pan;
@@ -26,4 +27,5 @@ public class PanService {
         }
         return null;
     }
+
 }
