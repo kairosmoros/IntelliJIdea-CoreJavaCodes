@@ -19,6 +19,7 @@ public class PanService {
         //and values are object of type Pan
         {
              System.out.println(pan);//this will print the values of the in map hash table
+            //now after calling the sout(pan) , it will automatically call toString() since you have overriden it in Pan class now to understand it go into string package
             if (pan.getAadhaarNumber().equals(aadhaarNumber))
             {
                 return pan;

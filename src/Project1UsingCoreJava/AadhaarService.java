@@ -15,7 +15,7 @@ static //static block runs only when the class(here AadhaarService) loads so whe
 }
     public Aadhaar getAadhaarByNumber(String aadhaarNumber)
     {
-        return aadhaarMap.get(aadhaarNumber);
+        return aadhaarMap.get(aadhaarNumber);//this will return the aadhaar number
     }
 
 }

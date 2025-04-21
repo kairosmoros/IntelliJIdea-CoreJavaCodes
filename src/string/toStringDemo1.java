@@ -33,5 +33,8 @@ public class toStringDemo1
     public static void main(String[] args) {
         ExampleClass obj= new ExampleClass("ABC1234" , "XYZ5678" , "Saving: 1000", "Stocks: 1000");
         System.out.println(obj);// Calls toString() automatically
+    /* Reference or Object?:
+It's the object that toString() is called on, but the reference (obj) is what you use to access that object.
+In this case, sout(obj) triggers obj.toString(), and because obj is a reference to an ExampleClass object, the overridden toString() in ExampleClass is executed.*/
     }
 }
