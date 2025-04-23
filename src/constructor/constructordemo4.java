@@ -12,7 +12,7 @@ class city5
 }
 class city4
 {
-    city5 city5;//this means city4 has an instance variable (city5 city5) that can store the address of a city5 object
+    city5 city5;//this means city4 has an instance variable (city5 city5) , that can store the address of a city5 object and works fine for reference of class city5 same as c5
     public void m1()
     {
         city5.m1();

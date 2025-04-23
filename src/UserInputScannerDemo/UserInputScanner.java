@@ -11,7 +11,7 @@ public class UserInputScanner
          * nextLine() reads the whole line ( useful for full names).
          *  */
         System.out.println("Enter you name: ");
-        String name = s.nextLine(); //Takes full line inpput
+        String name = s.nextLine(); //Takes full line ipput
         System.out.println("Enter your age: ");
         int age= s.nextInt();
         System.out.println("Hello " +name+ ", you are " + age + " years old.");
