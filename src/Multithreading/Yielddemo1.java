@@ -1,5 +1,5 @@
 package Multithreading;
-class YieldTest1 implements Runnable
+class YieldTest2 implements Runnable
 {
     @Override
     public void run() {
@@ -10,13 +10,15 @@ class YieldTest1 implements Runnable
         }
     }
 }
-public class Yielddemo
+public class Yielddemo1
 {
     public static void main(String[] args)
     {
         Thread t1= new Thread(new YieldTest1());
+        Thread t2=new Thread(new YieldTest1());
         t1.start();
-        Thread.yield();//the main purpose of the Thread.yield() is to hint the JVM to pause the current thread(here the main thread is current thread) and allow
+        t2.start();
+        Thread.yield();//the main purpose of the Thread.yield() is to hint the JVM to pause the current thread(here main thread) and allow
         //other threads to run, however it doesn't guarantee that this thread will immediately pause and another thread
         //will immediately take over, instead it depends on scheduler
         System.out.println("main Thread is running");

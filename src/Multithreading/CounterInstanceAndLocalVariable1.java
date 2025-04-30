@@ -18,7 +18,7 @@ class MyThread5 extends Thread {
     *  */
 
     MyThread5(String name, SharedData sharedData) {
-        //super(name);
+      //  super(name);//this sets the name of threads , I mean string name
         this.sharedData = sharedData;
     }
 
@@ -31,7 +31,7 @@ class MyThread5 extends Thread {
 }
 
 public class CounterInstanceAndLocalVariable1 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception{
         SharedData data = new SharedData(); // One shared object
         MyThread5 thread1 = new MyThread5("Thread-1", data);
         MyThread5 thread2 = new MyThread5("Thread-2", data);

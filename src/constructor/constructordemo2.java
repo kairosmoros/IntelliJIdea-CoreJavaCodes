@@ -5,6 +5,7 @@ class city2
     String cityname;
     city2(String cityname)
     {
+
         System.out.println(cityname);
     }
   public void m1()

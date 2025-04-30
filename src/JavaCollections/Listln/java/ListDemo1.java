@@ -5,7 +5,8 @@ import java.util.List;
 
 public class ListDemo1
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         List<Integer> list = new ArrayList<>();
         //add object in list
         if(list.isEmpty())
@@ -20,5 +21,6 @@ public class ListDemo1
          list.add(20);
          list.add(30);
          list.add(40);
+        System.out.println("list after adding elements in the list: " +list);
     }
 }
