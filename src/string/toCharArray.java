@@ -30,9 +30,6 @@ It’s just a pretty way of printing an array.
 
 }
 /* ✅ String Array (String[] arr = new String[10];)
-java
-Copy
-Edit
 arr[0] = "Prashant";
 arr[1] = "Yadav";
 Index	Value
