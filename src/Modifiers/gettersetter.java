@@ -26,3 +26,12 @@ public class gettersetter {
 
     }
 }
+/*
+getter and setter some points to note:
+getX and setX
+✅ If you're writing pure Java code, yes, the name of X doesn't matter — only the logic in the method matters.
+
+❌ If you're using frameworks/tools, then you should follow the getX() and setX() convention exactly, where X matches the field name with the first letter capitalized.
+
+
+ */
