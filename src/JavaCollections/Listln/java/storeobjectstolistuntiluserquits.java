@@ -22,9 +22,15 @@ public class storeobjectstolistuntiluserquits
             System.out.println("Enter id : ");
             int id = sc.nextInt();
             sc.nextLine();
+            /* Scanner sc = new Scanner(System.in);
+            int id = sc.nextInt();  // Reads 101, leaves \n
+            // Try sc.next():
+            sc.next();  // Skips whitespace, but expects a real token next (not \n alone)
+            // May block or behave unexpectedly
+            // Try sc.nextLine():
+            sc.nextLine();  // Reads and consumes the leftover \n properly ✅*/
             System.out.println("Enter the name: ");
             String name = sc.nextLine();
-            sc.nextLine();
             System.out.println("Enter the salary: ");
             double salary = sc.nextDouble();
             Employee5 e5= new Employee5(id, name,salary);

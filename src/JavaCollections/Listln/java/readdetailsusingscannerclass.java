@@ -27,9 +27,20 @@ public class readdetailsusingscannerclass
             System.out.println("Enter id : ");
             int id = sc.nextInt();
             sc.nextLine();//it consumes the /n which you have given while pressing enter while giving the id
+           /*
+           * Scanner sc = new Scanner(System.in);
+
+int id = sc.nextInt();  // Reads 101, leaves \n
+
+// Try sc.next():
+sc.next();  // Skips whitespace, but expects a real token next (not \n alone)
+            // May block or behave unexpectedly
+
+// Try sc.nextLine():
+sc.nextLine();  // Reads and consumes the leftover \n properly ✅*/
             System.out.println("Enter name :");
             String name = sc.nextLine();
-            sc.nextLine();//again here after entering name you pressed enter and that /n part is being  consumed by it else it will reflect unwanted /n in the salary and it may give error
+ //No need to write it once you understand it         //  sc.nextLine();//again here after entering name you pressed enter and that /n part is being  consumed by it else it will reflect unwanted /n in the salary and it may give error
             System.out.println("Enter salary : ");
             double salary = sc.nextDouble();
             Employee4 e = new Employee4(id, name, salary);
