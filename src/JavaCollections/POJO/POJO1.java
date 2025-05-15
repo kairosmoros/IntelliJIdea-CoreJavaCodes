@@ -18,6 +18,11 @@ class Employee
     private int id;
     private String name;
     private double salary;
+/*
+    public Employee(int id, String name, double salary)
+    {
+    }
+*/
     public void setId(int id)
     {
         this.id=id;
