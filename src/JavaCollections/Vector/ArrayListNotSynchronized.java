@@ -1,11 +1,14 @@
 package JavaCollections.Vector;
 /* ArrayList is not synchronized: We get odd results when we try to add elements into ArrayList from multiple threads.
-
+Although we can synchronize it as we did in MultiThreading go and watch the code.
+Where as vector is by default Synchronized but the problem is it is slow compare to ArrayList
  */
 import java.util.*;
 class Test
 {
-    static ArrayList<Integer> list= new ArrayList<>();
+    static ArrayList<Integer> list= new ArrayList<>();//here this is static variable means it is not for a particular object/instance rather
+    // it is for the class and it is shared among all the instances and can be accessed from any class without object creation by just Test.list.
+
 }
 class First extends Thread
 {
