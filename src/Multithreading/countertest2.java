@@ -61,6 +61,42 @@ public class countertest2 {
         CounterThread t1 = new CounterThread(sharedCounter);//you can also use Thread t1=new CounterThread(sharedCounter);[for clarity check the inheritance demo
         CounterThread t2 = new CounterThread(sharedCounter);
         t1.setName("Thread-1");
+        /*How are we able to use t1.setName("Thread-1") even though we haven’t defined a setName() method in the CounterThread class?
+
+🔸 Answer:
+You're able to call setName() on t1, t2, etc., because your CounterThread class extends Thread, and the Thread class (from java.lang.Thread) already provides a method called setName(String name).
+
+So you're inheriting this method.
+
+🔹 Think of it like this:
+java
+Copy code
+class CounterThread extends Thread {
+    // inherits everything from java.lang.Thread:
+    // - start()
+    // - run()
+    // - getName()
+    // - setName(String)
+    // - join()
+    // - etc.
+}
+You don't need to write setName() yourself because it's already available in the Thread class. Since CounterThread is a subclass of Thread, it can directly use setName().
+
+🔸 Extra Tip:
+If you print the thread name inside the run() method, it will show the name you've set:
+
+java
+Copy code
+@Override
+public void run() {
+    System.out.println("Running " + Thread.currentThread().getName());
+    ...
+}
+This helps in debugging multi-threaded programs by identifying which thread is doing what.
+
+✅ In Summary:
+Method	Defined In	Why You Can Use It
+setName()	java.lang.Thread	Because CounterThread extends Thread */
         t2.setName("Thread-2");
         t1.start();
         t2.start();

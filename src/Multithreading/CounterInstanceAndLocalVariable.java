@@ -1,4 +1,4 @@
-
+package Multithreading;
 
 
 import java.util.concurrent.ExecutionException;
@@ -6,7 +6,8 @@ import java.util.concurrent.ExecutionException;
 class MyThread extends Thread {
     int instanceVar = 10; // Instance variable unique to each Thread object
 
-    MyThread(String name) {
+    MyThread(String name)
+    {
         super(name); // Set thread name
     }
 

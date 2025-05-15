@@ -3,7 +3,7 @@ class jointest implements Runnable
 {
     @Override
     public void run() {
-        System.out.println("child thread is runnin ");
+        System.out.println("child thread is running ");
         System.out.println("still child thread is running");
         System.out.println("again child thread is only running");
     }

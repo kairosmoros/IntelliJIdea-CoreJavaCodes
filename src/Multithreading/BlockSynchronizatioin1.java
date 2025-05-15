@@ -12,7 +12,7 @@ class SBI extends Thread
         {
             for (int i=0; i<4; i++)
             {
-                money = Math.pow(i,i);//if you write here double money= Math.pow(i,i); it will become like new local variable named monye and original instance variable doouble money will not be updated
+                money = Math.pow(i,i);//if you write here double money= Math.pow(i,i); it will become like new local variable named money and original instance variable double money will not be updated
                 System.out.println("the total money for " +i + " hours  is " +money);
 
             }

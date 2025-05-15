@@ -18,7 +18,7 @@ class MyThread5 extends Thread {
     *  */
 
     MyThread5(String name, SharedData sharedData) {
-      //  super(name);//this sets the name of threads , I mean string name
+       super(name);//this sets the name of threads , I mean string name/ we are directly writing it since we have extended the Thread which contains all these things YOu don't need to give you own code here to set it.
         this.sharedData = sharedData;
     }
 
