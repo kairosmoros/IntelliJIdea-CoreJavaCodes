@@ -28,5 +28,10 @@ public class abstractiondemo {
         b1.engine();
         Mahindra m=new Mahindra();
         m.engine();
+        vehicle v=new Mahindra();
+        v.engine();
+        vehicle v1=new BMW();
+        v1.engine();
+
     }
 }
