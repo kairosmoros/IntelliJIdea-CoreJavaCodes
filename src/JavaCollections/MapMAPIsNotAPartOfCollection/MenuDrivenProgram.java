@@ -1,4 +1,4 @@
-package JavaCollections.Map;
+package JavaCollections.MapMAPIsNotAPartOfCollection;
 
 import java.util.Collection;
 import java.util.HashMap;

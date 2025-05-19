@@ -1,4 +1,4 @@
-package JavaCollections.Map;
+package JavaCollections.MapMAPIsNotAPartOfCollection;
 /* 1. HashMap: doesn't maintain insertion order. Allows only one null key.
    2. LinkedHashMap: maintains insertion order . Allows only one null key
    3. TreeMap: maintains sorted order of keys. It doesn't allow null key.

@@ -1,9 +1,8 @@
-package JavaCollections.Map;
+package JavaCollections.MapMAPIsNotAPartOfCollection;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 class Account
 {

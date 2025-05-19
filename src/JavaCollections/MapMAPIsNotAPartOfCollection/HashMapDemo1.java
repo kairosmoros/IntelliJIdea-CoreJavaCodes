@@ -1,4 +1,4 @@
-package JavaCollections.Map;
+package JavaCollections.MapMAPIsNotAPartOfCollection;
 import java.util.*;
 public class HashMapDemo1
     /* 1. HashMap: doesn't maintain insertion order. Allows only one null key.
