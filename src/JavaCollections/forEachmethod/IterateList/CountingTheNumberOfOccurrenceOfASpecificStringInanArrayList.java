@@ -9,13 +9,52 @@ public class CountingTheNumberOfOccurrenceOfASpecificStringInanArrayList {
         String target="apple";
        // int count=0; //its allowed until inside the lambda it is Effectively final(means using this variable but not modifying it.
         // so use mutable object , like this
-        AtomicInteger count=new AtomicInteger(0);//initialized to zero
+        AtomicInteger count=new AtomicInteger(0);//initialized to zero and This reference is final (or effectively final)
+        //final you know and effectively final means you are using it inside the lambda but when you don't modify then it is effectively final. ie;A variable is effectively final in Java **if:
+        //It is assigned a value only once, and
+        //That value is never changed (reassigned) after that.
+        //And yes — this applies not just in lambdas, but also in anonymous classes, inner classes, etc.
+        //You can use final explicitly (optional)
+        /*
+        final int count = 0; // Declared as final
+         Runnable r = () -> System.out.println(count); // ✅ Also works
+         But you don't have to write final explicitly — the compiler detects if the variable is effectively final.
+         */
+
         strings.forEach(s->
         {
 
             if(s.equals(target))// or can write it as if(s.equals("apple:)) it also counts for apple itself.
             {
                 count.incrementAndGet();//now you're modifying safely!
+                /*
+                With AtomicInteger, you’re not reassigning the variable, you're modifying the value inside the object.
+
+Example:
+AtomicInteger count = new AtomicInteger(0); // ✅ This reference is final (or effectively final)
+list.forEach(s -> {
+    if (s.equals("apple")) {
+        count.incrementAndGet(); // ✅ Safe: modifying internal state
+    }
+});
+
+System.out.println("Count of 'apple': " + count.get());
+🧠 Key Point
+You're not doing: count = new AtomicInteger(...); ← that would be reassignment ❌
+You're doing: count.incrementAndGet(); ← that is mutation inside the same object ✅
+So the reference to count is final, but the object it points to is mutable — and that's allowed!
+
+🧪 Analogy
+Imagine:
+final List<String> list = new ArrayList<>();
+You can do:
+list.add("new item"); // ✅ modify contents
+But you can’t do:
+list = new ArrayList<>(); // ❌ reassigning — not allowed
+Same idea applies to AtomicInteger.
+
+
+                 */
 
                /*
                 count++;
