@@ -1,5 +1,11 @@
 package Interface;
 //WE CAN'T MAKE OBJECT FOR THE INTERFACE
+/* to instantiate class or interface means (creating object of class or interface).
+NOTE: Interfaces in Java cannot be instantiated(creating object of interface) directly, regardless of
+whether they contain abstract, default , or static methods. Objects can only be created from classes that implement
+the interface. While default methods are accessed through implementing class objects, static methods are accessed
+using the interface name.
+ */
 public class interfacedemo
 {
     public static void main(String[] args) {
