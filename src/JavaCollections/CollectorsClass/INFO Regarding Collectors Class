@@ -1,0 +1,2 @@
+Collectors: Collectors is a final class. It provides methods to collect filtered elements into various collections, and
+performing operations on collected data such as counting elements, reverse, sort etc.
