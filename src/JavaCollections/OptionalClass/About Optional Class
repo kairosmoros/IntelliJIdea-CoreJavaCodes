@@ -1,0 +1,5 @@
+Optional Class:
+   1. In java 8, the concept of Optional was introduced to handle the case where a method might return a non-null value
+      or a null value.
+   2. Optional is a container object that may or may not contain a non-null value.
+   3. It helps to avoid null pointer exceptions and allows developers to write more concise and expressive code.

@@ -1,0 +1,33 @@
+Parallel Stream: Parallel streaming is a feature introduced in Java8 as part of the Stream API. It allows you to perform
+stream operations concurrently on multi-core processors, effectively dividing the data into smaller chunk and processing
+them in parallel threads.
+Instead of processing elements one by one (sequentially) , it processes them simultaneously .
+How to use Parallel Stream:
+1. From a collection:
+    list.parallelStream()
+2. From an existing stream
+    stream.parallel()
+
+eg. Sequential vs Parallel
+1. Sequential stream:
+    list.stream().forEach(System.out::println);
+
+2. Parallel stream():
+    list.parallelStream().forEach(System.out::println);
+
+Both produces the same result, but:
+1. .stream() processes in order.
+2. .parallelStream() may process out of order , but faster.
+
+Output order is not Guaranteed:
+    list.parallelStream().forEach(System.out::println);
+    The output order is not guaranteed.
+If order matter, use:
+    list.parallelStream().forEachOrdered(System.out::println);
+
+✅ When to Use Parallel Streams
+     Use it when	                                                  Avoid it when
+    You have large datasets	                                  For small collections — overhead is more
+    You’re doing CPU-intensive operations	                  If operations are I/O-bound (like file or DB access)
+    Result order doesn’t matter	                              You need strict order of output
+    Operations are independent	                              There are side-effects or shared state
