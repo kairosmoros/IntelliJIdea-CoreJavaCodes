@@ -1,0 +1,37 @@
+Predicates in Java8 are an essential part of java.util.function package, designed to handle functional-style operations.
+Here are 10 simple points to understand Predicates in Java8.
+
+1. Functional Interface:
+           It is a functional interface that takes an argument of a specific type and return a boolean value(true or false).
+
+2. Single Abstract Method (SAM):
+           As a functional interface, Predicate has a single abstract method named test(T t), where T is the type of
+           input argument.
+
+3. Test Condition:
+           The test(T t) method is responsible for evaluating the condition specified by the Predicate. If the condition
+           is met for the input t, the method returns true; otherwise, it returns false.
+
+4. Filtering Collections:
+           Predicates are commonly used to filter elements from collections. By passing a Predicate to the filter()
+           method of Java 8 streams or collections, you can selectively retain elements that satisfy the condition.
+
+5. Chaining Predicates:
+           Predicates can be combined using logical operators like and(), or() , and negate() to create more complex
+           conditions for filtering.
+
+6. Default Methods:
+           The Predicate interface provides default methods like and(), or(), and negate() to create more complex
+           conditions for filtering.
+
+7. Avoiding Null Checks:
+           Predicates can be used to check for null values or other conditions that could cause null pointer exceptions,
+           providing a safer and more readable alternative to traditional null checks.
+
+8. Java Collections API:
+           Java 8 introduced several methods in the Collections API that accept Predicate as an argument, such as
+           removeIf(), making it easier to perform conditional element removal from collections.
+
+9. Lambda Expressions:
+           Predicates can be defined using lambda expressions, allowing for concise and expressive code when dealing
+           with conditional checks.

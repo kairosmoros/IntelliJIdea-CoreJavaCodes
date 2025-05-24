@@ -1,0 +1,12 @@
+1. The Date and Time API(JSR 310) providing a comprehensive set of classes to handle date,time and duration operations.
+
+2. JSR 310 stands for "Java Specification Request 310", and it is the formal request to add the Date and Time API to the
+   Java Standard Edition(Java SE).
+
+3. It is the solution to problems in java.util.Date and java.util.Calender classes.
+
+4. The classes in the Date and Time API are immutable , meaning their values can't be changed once created , ensuring
+    thread safety in multi-threaded environments.
+
+5. The API is part of the java.time package and includes classes such as LocalDate, LocalTime, LocalDateTime
+    ZonedDateTime, Duration, Period and more.
