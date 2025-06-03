@@ -1,0 +1,24 @@
+What is Signleton Pattern?
+The singleton pattern ensures that ONLY ONE INSTANCE of a class is CREATED throughout the application and provides a
+GLOBAL POINT OF ACCESS to that instance.
+This is useful when:
+You need exactly one object to coordinate actions(e.g., Database Connection, Logger, Configuration Manager).
+
+✅ Simple Definition of Singleton Pattern
+The Singleton Pattern is used when only one object of a class is needed throughout the entire program.
+We use it when we want to control object creation and make sure only one instance exists (like a single database connection, configuration manager, or logger).
+
+✅ Why We Use Singleton
+To save memory by not creating multiple objects.
+
+To ensure global access to one instance.
+
+To maintain a consistent state across the application (like settings or logs).
+
+
+KEY FEATURES:
+1. PRIVATE CONSTRUCTOR: prevents instantiation from other classes.
+2. STATIC INSTANCE: holds the single instance
+3. Public Static Method: Provides global access to the instance.
+
+NOW go to code "SingletonDemo" section to understand these points
