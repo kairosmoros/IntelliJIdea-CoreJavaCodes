@@ -12,7 +12,7 @@ public class main
             int a=sc.nextInt();
             sc.nextLine();
             int b=sc.nextInt();
-            Calculator calc =  Calculator.getInstance();
+            Calculator calc =  Calculator.getInstance();// think of it as , when you write Calculator calc = new Calculator() and object gets created then can access via the reference to any method and variable if accessible.
             System.out.println("sum = " +calc.add(a,b));
 
         }
